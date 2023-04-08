@@ -1,0 +1,7 @@
+Mark Root, 45, mark_root@gmail.com, Senior developer, 7000
+Lena Chai, 43, lena_chai@gmail.com, Software tester, 4000
+Chris Wall, 34, chris_wall@gmail.com, Middle developer, 3500
+Chris Board, 29, chris_board@gmail.com, Project manager, 3500
+Frank Lion, 37, frank_frank@gmail.com, Junior developer, 1500
+Mark Lean, 45, mark_lean@gmail.com, Junior developer, 2000
+James Wall, 35, james_wall123@mail.com, Game developer, 4500
