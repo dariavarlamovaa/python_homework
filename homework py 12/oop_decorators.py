@@ -32,26 +32,22 @@
 #     def __add__(self, other):
 #         x = self.numerator * other.denominator + self.denominator * other.numerator
 #         y = self.denominator * other.denominator
-#         res = Fraction.__simplify(x, y)
-#         return res
+#         return f'the result is {Fraction.__simplify(x, y)}'
 
 #     def __sub__(self, other):
 #         x = self.numerator * other.denominator - self.denominator * other.numerator
 #         y = self.denominator * other.denominator
-#         res = Fraction.__simplify(x, y)
-#         return res
+#         return f'the result is {Fraction.__simplify(x, y)}'
 
 #     def __mul__(self, other):
 #         x = self.numerator * other.numerator
 #         y = self.denominator * other.denominator
-#         res = Fraction.__simplify(x, y)
-#         return res
+#         return f'the result is {Fraction.__simplify(x, y)}'
 
 #     def __truediv__(self, other):
 #         x = self.numerator * other.denominator
 #         y = self.denominator * other.numerator
-#         res = Fraction.__simplify(x, y)
-#         return res
+#         return f'the result is {Fraction.__simplify(x, y)}'
 
 #     @staticmethod
 #     def __simplify(numerator, denominator):
@@ -61,24 +57,14 @@
 #     def counter():
 #         print(f'counter = {Fraction.count}')
 
-#     def __str__(self):
-#         if self.denominator == 1:
-#             return f"{self.numerator}"
-#         return f"{self.numerator}/{self.denominator}"
 
-#     def __repr__(self):
-#         return f"{self.numerator}/{self.denominator}"
+# f1 = Fraction(3, 7)
+# f2 = Fraction(2, 9)
 
-
-# f1 = Fraction(3, 7) + Fraction(2, 9)
-# f2 = Fraction(4, 7) - Fraction(4, 6)
-# f3 = Fraction(3, 5) * Fraction(1, 4)
-# f4 = Fraction(2, 6) / Fraction(6, 8)
-
-# print(f'the result is {f1}')
-# print(f'the result is {f2}')
-# print(f'the result is {f3}')
-# print(f'the result is {f4}')
+# print(f1 + f2)
+# print(f1 - f2)
+# print(f1 * f2)
+# print(f1 / f2)
 
 # Fraction.counter()
 
