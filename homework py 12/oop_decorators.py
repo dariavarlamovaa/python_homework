@@ -1,36 +1,85 @@
 # task 1
+# from fractions import Fraction as Frac
+
+
 # class Fraction:
 #     count = 0
-#
+
 #     def __init__(self, numerator, denominator):
-#         self.n = numerator
-#         self.d = denominator
-#
-#     def addition(self):
+#         self.numerator = numerator
+#         self.denominator = denominator
 #         Fraction.count += 1
-#         return f'addition = {self.n + self.d}'
-#
-#     def subtraction(self):
-#         Fraction.count += 1
-#         return f'subtraction = {self.n - self.d}'
-#
-#     def multiplication(self):
-#         Fraction.count += 1
-#         return f'multiplication = {self.n * self.d}'
-#
-#     def division(self):
-#         Fraction.count += 1
-#         return f'division = {self.n / self.d}'
-#
+
+#     @property
+#     def numerator(self):
+#         return self._numerator
+
+#     @numerator.setter
+#     def numerator(self, value):
+#         self._numerator = value
+
+#     @property
+#     def denominator(self):
+#         return self._denominator
+
+#     @denominator.setter
+#     def denominator(self, value):
+#         if value == 0:
+#             raise ValueError('the denominator can not be 0!')
+#         else:
+#             self._denominator = value
+
+#     def __add__(self, other):
+#         x = self.numerator * other.denominator + self.denominator * other.numerator
+#         y = self.denominator * other.denominator
+#         res = Fraction.__simplify(x, y)
+#         return res
+
+#     def __sub__(self, other):
+#         x = self.numerator * other.denominator - self.denominator * other.numerator
+#         y = self.denominator * other.denominator
+#         res = Fraction.__simplify(x, y)
+#         return res
+
+#     def __mul__(self, other):
+#         x = self.numerator * other.numerator
+#         y = self.denominator * other.denominator
+#         res = Fraction.__simplify(x, y)
+#         return res
+
+#     def __truediv__(self, other):
+#         x = self.numerator * other.denominator
+#         y = self.denominator * other.numerator
+#         res = Fraction.__simplify(x, y)
+#         return res
+
+#     @staticmethod
+#     def __simplify(numerator, denominator):
+#         return Frac(numerator, denominator)
+
 #     @staticmethod
 #     def counter():
 #         print(f'counter = {Fraction.count}')
-#
-#
-# a = Fraction(3, 5)
-# print(a.multiplication())
-# Fraction.counter()
-# print(a.addition())
+
+#     def __str__(self):
+#         if self.denominator == 1:
+#             return f"{self.numerator}"
+#         return f"{self.numerator}/{self.denominator}"
+
+#     def __repr__(self):
+#         return f"{self.numerator}/{self.denominator}"
+
+
+# f1 = Fraction(3, 7) + Fraction(2, 9)
+# f2 = Fraction(4, 7) - Fraction(4, 6)
+# f3 = Fraction(3, 5) * Fraction(1, 4)
+# f4 = Fraction(2, 6) / Fraction(6, 8)
+
+# print(f'the result is {f1}')
+# print(f'the result is {f2}')
+# print(f'the result is {f3}')
+# print(f'the result is {f4}')
+
 # Fraction.counter()
 
 
