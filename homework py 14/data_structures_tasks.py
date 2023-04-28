@@ -117,12 +117,14 @@
 #             u.show(reverse=True)
 #         else:
 #             u.show()
+# 
 #     elif command == 4:
 #         num = int(input('enter the number to search: '))
 #         if u.contains(num):
 #             print(f'{num} is in the list')
 #         else:
 #             print(f'{num} is not in the list')
+# 
 #     elif command == 5:
 #         num = int(input('enter the number to replace: '))
 #         if u.contains(num):
@@ -141,6 +143,7 @@
 #     elif command == 0:
 #         print('bye-bye')
 #         break
+# 
 #     else:
 #         print('incorrect input. try again')
 #         pass
