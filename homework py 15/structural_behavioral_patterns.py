@@ -230,7 +230,7 @@
 #
 # librarian = Librarian()
 # library = Library()
-# reader1 = Reader("Bob")
+# reader1 = Reader('Leo')
 # book1 = Book("b1", "a1", 2000)
 # book2 = Book("b2", "a2", 2010)
 # library.add_book(book1)
