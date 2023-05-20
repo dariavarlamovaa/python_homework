@@ -1,0 +1,26 @@
+{
+  "1": {
+    "title": "Spaghetti Carbonara",
+    "author": "Gordon Ramsay",
+    "type_of_recipe": "Main Course",
+    "description": "Classic Italian pasta dish with creamy sauce, pancetta, and Parmesan cheese.",
+    "link": "https://www.example.com/spaghetti_carbonara_video",
+    "ingredients": [
+      "200g spaghetti",
+      "150g pancetta, diced..."
+    ],
+    "cuisine": "Italian"
+  },
+  "2": {
+    "title": "Spaghetti Bolognese",
+    "author": "Pellegrino Artusi",
+    "type_of_recipe": "Main course",
+    "description": "Pasta with bolognese sauce",
+    "link": "www.example.com/spaghetti_bolognese_video",
+    "ingredients": [
+      "100g pasta",
+      "400 g minced meat..."
+    ],
+    "cuisine": "Italian"
+  }
+}
