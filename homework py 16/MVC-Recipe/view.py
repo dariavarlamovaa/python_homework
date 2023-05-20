@@ -5,7 +5,7 @@ class View:
         print('1. Add one recipe\n'
               '2. Show all the recipes\n'
               '3. Find a recipe by the target \n'
-              '4. Delete recipe by its article\n'
+              '4. Delete a recipe by the target\n'
               '0. Exit the program')
         print('-' * 20)
         query = input('Enter the number: ')
