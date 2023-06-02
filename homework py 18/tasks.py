@@ -40,7 +40,6 @@
 #
 #
 # analysis_and_summarize_file('f.txt')
-import datetime
 
 # task 2
 # import time
