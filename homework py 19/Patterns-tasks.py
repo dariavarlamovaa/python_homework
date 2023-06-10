@@ -218,21 +218,22 @@
 #         print('Volume down')
 #
 #
-# tv = Device()
-# remote_control = RemoteControl()
-#
-# power_on_command = PowerOnCommand(tv)
-# power_off_command = PowerOffCommand(tv)
-# volume_up_command = VolumeUpCommand(tv)
-# volume_down_command = VolumeDownCommand(tv)
-#
-# remote_control.set_command(0, power_on_command)
-# remote_control.set_command(1, power_off_command)
-# remote_control.set_command(2, volume_up_command)
-# remote_control.set_command(3, volume_down_command)
-#
-# remote_control.press_button(0)
-# remote_control.press_cancel()
-# remote_control.press_button(1)
-# remote_control.press_button(2)
-# remote_control.press_button(3)
+# if __name__ == '__main__':
+#     tv = Device()
+#     remote_control = RemoteControl()
+
+#     power_on_command = PowerOnCommand(tv)
+#     power_off_command = PowerOffCommand(tv)
+#     volume_up_command = VolumeUpCommand(tv)
+#     volume_down_command = VolumeDownCommand(tv)
+
+#     remote_control.set_command(0, power_on_command)
+#     remote_control.set_command(1, power_off_command)
+#     remote_control.set_command(2, volume_up_command)
+#     remote_control.set_command(3, volume_down_command)
+
+#     remote_control.press_button(0)
+#     remote_control.press_cancel()
+#     remote_control.press_button(1)
+#     remote_control.press_button(2)
+#     remote_control.press_button(3)
