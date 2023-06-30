@@ -153,7 +153,7 @@ SELECT MAX(cg.CostUnit* cg.Count) as MaxPurchase
 FROM ClientGoods cg
 
 23.	 Определите среднюю прибыль от перепродажи масла. 30.06914893617022
-**[Получается - 48.599999999999994, если не убирать из условия масло]**
+[Получается - 48.599999999999994, если не убирать из условия масло]
 
 SELECT AVG((cg.CostUnit - sg.CostUnit) * cg.Count) as AvgOilProfit
 FROM ClientGoods cg, SallerGoods sg
@@ -164,7 +164,7 @@ WHERE sg.ID = cg.ID and sg.Goods like "масло%"
 SELECT t1 + t2 as BrokersCount
 FROM (SELECT COUNT(c.Client) as t1 FROM Client c WHERE c.Status = "посредник"), (SELECT COUNT(s.Seller) as t2 FROM Seller s WHERE s.Status = "посредник")
 
-**[Или так если надо вывести только тех, кто что-то покупал или продавал, но выводит тогда 8, так как "Беринг" ничего не покупал]**
+[Или так если надо вывести только тех, кто что-то покупал или продавал, но выводит тогда 8, так как "Беринг" ничего не покупал]
 
 SELECT Count(DISTINCT sg.INNSeller)+COUNT(DISTINCT cg.INNClient) as BrokersCount
 FROM Client c, Seller s, SallerGoods sg, ClientGoods cg
