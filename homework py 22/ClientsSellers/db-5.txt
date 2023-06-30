@@ -137,7 +137,7 @@ WHERE c.Status = "посредник" and c.INNClient = cg.INNClient and cg.ID =
 
 20.	 Определите минимальную прибыль за товар, купленный у посредника. 5
 
-SELECT ROUND(MIN((cg.CostUnit - sg.CostUnit) * cg.Count)) as MaxBrokerProfit
+SELECT ROUND(MIN((cg.CostUnit - sg.CostUnit) * cg.Count)) as MinBrokerProfit
 FROM SallerGoods sg, Client c, ClientGoods cg, Seller s
 WHERE s.Status = "посредник" and s.INNSeller = sg.INNSeller and cg.ID = sg.ID
 
