@@ -155,7 +155,7 @@ FROM ClientGoods cg
 23.	 Определите среднюю прибыль от перепродажи масла. 30.06914893617022
 Получается - 48.599999999999994, если не убирать из условия масло
 
-SELECT AVG((cg.CostUnit - sg.CostUnit) * cg.Count)
+SELECT AVG((cg.CostUnit - sg.CostUnit) * cg.Count) as AvgOilProfit
 FROM ClientGoods cg, SallerGoods sg
 WHERE sg.ID = cg.ID and sg.Goods like "масло%"
 
