@@ -1,0 +1,70 @@
+Если задание можно решить с использованием подзапроса, решите его с использованием подзапроса, даже если выглядит, что использовать его излишне:)
+
+Таблица Salespeople:
+snum - номер продавца (первичный ключ)
+sname - имя продавца
+com - комиссионные продавца
+city - город проживания продавца
+
+Таблица Orders:
+onum - номер заказа (первичный ключ)
+snum - номер продавца
+cnum - номер заказчика
+amt - сумма заказа
+odate - дата заказа
+
+Таблица Customers:
+cnum - номер заказчика (первичный ключ)
+cname – имя заказчика (клиента)
+city - город проживания заказчика
+snum - номер продавца
+rating - рейтинг
+
+
+1.	Выведите перечень сумм заказов продовца Rifkin.	SELECT o.amt as RifkinsAmount
+	FROM Orders o, Salespeople sp
+	WHERE sp.sname = "Rifkin" and sp.snum = o.snum
+
+2.	Определите  комиссионные всех продовцов, обслуживающих заказчиков в Риме
+
+	SELECT sp.com as ComRome
+	FROM Salespeople sp, Customers c
+	WHERE c.city = "Rome" and sp.snum = c.snum
+
+3.	Напишите запрос, который определит заказчиков имеющих рейтинг ниже среднего.
+	
+	SELECT c.cname AS CustomersWithRatBelowAVG
+  	FROM Customers c
+ 	WHERE c.rating < (SELECT AVG(c.rating) FROM customers c)
+
+4.	Определите города проживания заказчиков с наименьшим рейтингом.
+
+	SELECT c.city as CustomersWithLowestRat
+	FROM Customers c
+	WHERE c.rating = (SELECT MIN(c.rating) FROM customers c)
+	GROUP BY c.city
+
+5.	Напишите запрос, который выводил бы заказы клиента Liu
+
+	SELECT c.cname, o.onum, o.amt, o.odate
+	FROM Orders o,  Customers c
+	WHERE c.cname = "Liu" and c.cnum = o.cnum
+
+6.	Определите наибольшие комиссионные продовца для Рима.
+
+	SELECT sp.sname, MAX(sp.com) as MaxComForRome
+	FROM Salespeople sp, Customers c
+	WHERE c.city = "Rome" and sp.snum = c.snum
+
+
+7.	Напишите запрос который выведет всех клиентов обслуживаемых продовцом Motiка.
+
+	SELECT c.cname
+	FROM Customers c, Salespeople sp
+	WHERE sp.sname = "Motika" and sp.snum = c.snum
+
+8.	Напишите запрос, который выведет максимальный рейтинг заказчика для продовцов имеющих комиссионные больше 0,11%.
+
+	SELECT c.cname, MAX(c.rating)
+	FROM Customers c
+	WHERE (SELECT sp.com FROM Salespeople sp WHERE sp.com < 0.11)
