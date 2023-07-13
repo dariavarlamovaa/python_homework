@@ -60,7 +60,7 @@
 #         violation_date = violation['Violation Date']
 #         cur.execute('''INSERT INTO violations VALUES(?, ?, ?)''', (violation_id, license_id, violation_date))
 # 
-#     cur.commit()
+#     con.commit()
 #
 #     ------------------------ task 4 - Write SQL-queries ------------------------
 #
