@@ -1,0 +1,27 @@
+[
+  {
+    "Violation ID": "12345",
+    "License ID": "90345",
+    "Violation Date": "15.03.2022"
+  },
+  {
+    "Violation ID": "67890",
+    "License ID": "12322",
+    "Violation Date": "16.03.2022"
+  },
+  {
+    "Violation ID": "54321",
+    "License ID": "34543",
+    "Violation Date": "18.03.2022"
+  },
+  {
+    "Violation ID": "98765",
+    "License ID": "23423",
+    "Violation Date": "19.03.2022"
+  },
+  {
+    "Violation ID": "24680",
+    "License ID": "22234",
+    "Violation Date": "20.03.2022"
+  }
+]
