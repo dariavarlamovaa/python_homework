@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Home</title>
+    {% endif %}
+    {% endblock title %}
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+{% block header %}
+<header class="header-menu">
+    <div class="container">
+        <nav class="menu-nav">
+            {% for m in menu %}
+            <a class="menu-nav-item" href="{{ m.url }}">{{ m.name }}</a>
+            {% endfor %}
+        </nav>
+    </div>
+</header>
+{% endblock header %}
+<main>
+    {% block content %}
+    {% endblock content %}
+</main>
+</body>
+</html>

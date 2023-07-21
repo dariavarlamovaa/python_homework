@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }}
+{% endblock %}
+
+{% block content%}
+<section class="contacts-page">
+    <div class="container">
+        <h1 class="contacts-msg">{{ title }}</h1>
+        <div class="contacts">
+            <form method="post" class="form-contacts">
+                <label>Message:</label>
+                <p><textarea name="message" cols="155" rows="25"></textarea></p>
+                <p class="msg-button"><input type="submit" value="Send message"></p>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock content%}
