@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Home</title>
+    {% endif %}
+    {% endblock title %}
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+{% block header %}
+<header class="header-menu">
+    <div class="container">
+        <div class="menu">
+            <a class="logo" href="/">HEALTHY EATING</a>
+            <nav class="menu-nav">
+                {% for m in menu %}
+                <a class="menu-nav-item" href="{{ m.url }}">{{ m.title }}</a>
+                {% endfor %}
+        </div>
+        </nav>
+    </div>
+</header>
+{% endblock header %}
+<main>
+    {% block content %}
+    {% for category, msg in get_flashed_messages(True) %}
+    <div class="flash {{ category }}">{{ msg }}</div>
+    {% endfor %}
+    {% endblock content %}
+</main>
+</body>
+</html>

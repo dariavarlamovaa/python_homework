@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }}
+{% endblock %}
+{% block content%}
+<section class="main-page">
+    <div class="container">
+        <div class="banner-left">
+            <h1>{{ title }}</h1>
+            <p>Here you will find inspiration for healthy eating and an exciting culinary journey to the best version
+                of yourself. </p>
+            <p>Our mission is to help you discover the magic of taste and take care of your health at the
+                same time.</p>
+            <p>In the <a href="/recipes"><b>Recipes</b></a> section you will find a variety of traditional recipes using fresh, natural ingredients.</p>
+            <p>If you have your own favorite healthy recipes, we will be happy to share them with others! Just go
+                to the <a href="/add_recipe"><b>Add a recipe</b></a> section to contribute to our culinary collection.</p>
+            <p>We hope that our website will become your reliable companion in culinary experiments and help you enjoy
+                delicious dishes that support your health and well-being.</p>
+            <p>Bon appétit.</p>
+        </div>
+    </div>
+</section>
+
+{% endblock content%}

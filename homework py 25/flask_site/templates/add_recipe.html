@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }}
+{% endblock %}
+
+{% block content%}
+
+<section class="add-recipe-page">
+    <div class="container">
+        <h1 class="add-recipe-msg">{{ title }}</h1>
+        <div class="add-recipe">
+            <form action="/add_recipe" method="post" class="form-add-recipe">
+                <p>Author: <input type="text" name="author" required></p>
+                <p>Title: <input type="text" name="title" required></p>
+                <p>Category: <select size="1" name="category" required>
+                    <option value="" disabled selected>Select a category</option>
+                    <option value="Dinner">Dinner</option>
+                    <option value="Breakfast_and_Brunch">Breakfast and Brunch</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Salads">Salads</option>
+                    <option value="Soups">Soups</option>
+                    <option value="Desserts">Desserts</option>
+                    <option value="Smoothies">Smoothies</option>
+                    <option value="Snacks">Snacks</option>
+                </select></p>
+                <p>Cooking time (min): <input type="number" name="cooking_time" required></p>
+                <p>Ingredients: <input type="text" name="ingredients" required></p>
+                <p>Step-By-Step instruction: </p>
+                <p><textarea name="instruction" ></textarea></p>
+                <p><input type="submit" value="Add"></p>
+            </form>
+        </div>
+    </div>
+</section>
+{{ super() }}
+
+{% endblock content%}

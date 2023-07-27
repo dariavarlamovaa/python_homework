@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+
+<section class="recipe-one">
+    <div class="container">
+        <div class="recipe-info">
+            <h1>{{ title }}</h1>
+            <p><b>Author: </b>{{ author }}</p>
+            <p><b>Category: </b>{{ category }}</p>
+            <p><b>Cooking Time(min): </b>{{ cooking_time }}</p>
+            <p><b>Ingredients: </b>{{ ingredients }}</p>
+            <p><b>Instructions: </b>{{ instruction }}</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

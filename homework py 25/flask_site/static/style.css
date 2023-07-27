@@ -1,0 +1,139 @@
+body {
+    font: 700 16px 'Open Sans', Helvetica, Arial, Sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #545454;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.header-menu {
+    background-color: #71a339;
+    padding: 30px 0px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fff;
+    font-size: 25px;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+    color: #fff;
+    align-items: center;
+}
+
+.banner-left h1{
+    font-size: 80px;
+    padding: 50px 0px;
+}
+
+.banner-left p{
+    font-size: 30px;
+    text-align: justify;
+    padding: 13px 0;
+}
+
+.banner-left a {
+    text-decoration: underline;
+    color: #71a339;
+}
+
+.recipes-top h1{
+    font-size: 80px;
+    padding: 50px 0;
+}
+
+.recipes-top p{
+    font-size: 30px;
+}
+
+.recipes-bottom li{
+    padding: 15px;
+    font-size: 23px;
+}
+
+.recipes-bottom a {
+    color: #71a339;
+}
+
+.recipe-info h1 {
+    font-size: 60px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.recipe-info p {
+    padding: 15px;
+}
+
+.add-recipe-msg {
+    font-size: 80px;
+    padding: 50px 0 20px 0;
+}
+
+.form-add-recipe p {
+    padding: 10px 0;
+}
+
+.form-add-recipe input, select, textarea{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 2;
+    background-color: #fff;
+    border: 1px solid #545454;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.form-add-recipe select {
+    height: 45px;
+}
+
+.form-add-recipe input[type=submit]:hover {
+    background-color: #71a339;
+    color: #fff;
+}
+
+.flash {
+    padding: 10px;
+    width: 300px;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.flash.success {
+    border: 1px solid #21DB56;
+    background: #71a339;
+    color: white;
+}
+
+.flash.error {
+    border: 1px solid #FF5343;
+    background: #FF9C9C;
+    color: #fff;
+}
